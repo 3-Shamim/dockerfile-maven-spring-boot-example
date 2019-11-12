@@ -17,6 +17,10 @@ mvn dockerfile:push or ./mvnw dockerfile:push
 For push image make sure:
 * login docker hub
 * repository and image name should be same.
+* if mvn push failed then you can use bellow command
+```
+docker push {image-name||image-id}
+```
 
 For more info:
 * visit: [spring-io](https://spring.io/guides/gs/spring-boot-docker)

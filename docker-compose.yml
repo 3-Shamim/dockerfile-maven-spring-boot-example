@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  demo-maven-docker:
+    container_name: demo-maven-docker
+    image: username/demo-maven-docker:0.1.0
+    volumes:
+      - "./logs:/app/lib/logs"
+    environment:
+      - "SERVER_PORT=8080"
+    ports:
+      - "80:8080" #docker-port:expose-port
